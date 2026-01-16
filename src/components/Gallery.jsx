@@ -45,17 +45,6 @@ const Gallery = () => {
                         </motion.div>
                     ))}
                 </div>
-
-                <div className="mt-12 text-center">
-                    <p className="text-gray-500 mb-4 text-sm">¿Quieres ver más?</p>
-                    <a
-                        href="#"
-                        className="inline-flex items-center gap-2 text-brand-orange hover:text-white transition-colors"
-                    >
-                        <Image size={20} />
-                        <span>Ver álbum completo en Google Photos</span>
-                    </a>
-                </div>
             </div>
 
             {/* Lightbox Modal */}
