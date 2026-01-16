@@ -1,4 +1,4 @@
-```javascript
+
 import React from 'react';
 import { MapPin, Instagram, Facebook, MessageCircle } from 'lucide-react';
 
