@@ -18,7 +18,6 @@ const Footer = () => {
                     <div>
                         <h4 className="text-white font-bold mb-4">Contacto</h4>
                         <ul className="space-y-2 text-sm">
-                            <li>Mellado Motos</li>
                             <li>Temuco, Chile</li>
                             <li>contacto@obergfotos.cl</li>
                         </ul>
