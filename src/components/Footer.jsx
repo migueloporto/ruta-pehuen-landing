@@ -1,5 +1,6 @@
+```javascript
 import React from 'react';
-import { MapPin, Instagram, Facebook } from 'lucide-react';
+import { MapPin, Instagram, Facebook, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -19,14 +20,15 @@ const Footer = () => {
                         <ul className="space-y-2 text-sm">
                             <li>Mellado Motos</li>
                             <li>Temuco, Chile</li>
-                            <li>contacto@motolike.cl</li>
+                            <li>contacto@obergfotos.cl</li>
                         </ul>
                     </div>
                     <div>
                         <h4 className="text-white font-bold mb-4">Síguenos</h4>
                         <div className="flex gap-4">
-                            <a href="#" className="hover:text-brand-orange transition-colors"><Instagram /></a>
-                            <a href="#" className="hover:text-brand-orange transition-colors"><Facebook /></a>
+                            <a href="https://www.instagram.com/mtmototrack" className="hover:text-brand-orange transition-colors"><Instagram /></a>
+                            <a href="https://www.facebook.com/fotos.oberg/" className="hover:text-brand-orange transition-colors"><Facebook /></a>
+                            <a href="https://wa.me/+56994995070" className="hover:text-brand-orange transition-colors"><MessageCircle /></a>
                         </div>
                     </div>
                 </div>
