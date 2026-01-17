@@ -49,10 +49,11 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, height: 0 }}
-                        animate={{ opacity: 1, height: 'auto' }}
-                        exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10"
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.3 }}
+                        className="absolute top-full left-0 w-full md:hidden bg-black/95 backdrop-blur-xl border-t border-white/10 shadow-xl overflow-hidden"
                     >
                         <div className="flex flex-col items-center py-8 gap-6">
                             {navLinks.map((link) => (

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Image, X } from 'lucide-react';
+import { Image, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Gallery = () => {
-    const [selectedImage, setSelectedImage] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState(null);
 
     // Dynamically import all images from src/assets/gallery
     // Note: We use eager: true to import the modules directly to get the URLs
@@ -36,7 +36,7 @@ const Gallery = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             whileHover={{ cursor: 'pointer' }}
                             transition={{ duration: 0.5, delay: idx * 0.05 }}
-                            onClick={() => setSelectedImage(img.src)}
+                            onClick={() => setSelectedIndex(idx)}
                             className="relative group overflow-hidden rounded-xl break-inside-avoid"
                         >
                             <img
@@ -56,28 +56,52 @@ const Gallery = () => {
 
             {/* Lightbox Modal */}
             <AnimatePresence>
-                {selectedImage && (
+                {selectedIndex !== null && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        onClick={() => setSelectedImage(null)}
+                        onClick={() => setSelectedIndex(null)}
                         className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4 backdrop-blur-sm"
                     >
                         <button
-                            className="absolute top-4 right-4 text-white hover:text-brand-orange transition-colors"
-                            onClick={() => setSelectedImage(null)}
+                            className="absolute top-4 right-4 text-white hover:text-brand-orange transition-colors z-50"
+                            onClick={() => setSelectedIndex(null)}
                         >
                             <X size={40} />
                         </button>
+
+                        {/* Navigation Buttons */}
+                        <button
+                            className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all z-50"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setSelectedIndex((prev) => (prev - 1 + images.length) % images.length);
+                            }}
+                        >
+                            <ChevronLeft size={48} />
+                        </button>
+
+                        <button
+                            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/50 hover:text-white hover:bg-white/10 p-2 rounded-full transition-all z-50"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setSelectedIndex((prev) => (prev + 1) % images.length);
+                            }}
+                        >
+                            <ChevronRight size={48} />
+                        </button>
+
                         <motion.img
-                            src={selectedImage}
+                            key={selectedIndex} // Key triggers animation on change
+                            src={images[selectedIndex].src}
                             alt="Imagen Ampliada"
-                            initial={{ scale: 0.8 }}
-                            animate={{ scale: 1 }}
-                            exit={{ scale: 0.8 }}
-                            onClick={(e) => e.stopPropagation()} // Prevent close when clicking image itself
-                            className="max-w-full max-h-[90vh] rounded-lg shadow-2xl border border-white/10"
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.9, opacity: 0 }}
+                            transition={{ duration: 0.2 }}
+                            onClick={(e) => e.stopPropagation()}
+                            className="max-w-full max-h-[90vh] rounded-lg shadow-2xl border border-white/10 select-none"
                         />
                     </motion.div>
                 )}
