@@ -6,9 +6,14 @@ const Gallery = () => {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const images = [
-        { src: '/assets/volcano.png', alt: 'Volcán y Lago', colSpan: 'md:col-span-2' },
-        { src: '/assets/hero.png', alt: 'Ruta en Moto', colSpan: 'md:col-span-1' },
-        { src: '/assets/campfire.png', alt: 'Campamento Nocturno', colSpan: 'md:col-span-3' },
+        { src: '/assets/20231230_123204.jpg', alt: 'Ruta entre Araucarias', colSpan: 'md:col-span-2' },
+        { src: '/assets/20240421_144829.jpg', alt: 'Aventuras off-road', colSpan: 'md:col-span-1' },
+        { src: '/assets/20231230_174126.jpg', alt: 'Paisajes Andinos', colSpan: 'md:col-span-1' },
+        { src: '/assets/20231230_212107.jpg', alt: 'Atardecer en ruta', colSpan: 'md:col-span-2' },
+        { src: '/assets/20240225_184504.jpg', alt: 'Naturaleza viva', colSpan: 'md:col-span-1' },
+        { src: '/assets/20240421_141105.jpg', alt: 'Exploración', colSpan: 'md:col-span-1' },
+        { src: '/assets/volcano.png', alt: 'Volcanes Activos', colSpan: 'md:col-span-1' },
+        { src: '/assets/20250427_161419.jpg', alt: 'Compañerismo', colSpan: 'md:col-span-3' },
     ];
 
     return (
