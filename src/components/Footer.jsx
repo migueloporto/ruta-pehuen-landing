@@ -19,7 +19,7 @@ const Footer = () => {
                         <h4 className="text-white font-bold mb-4">Contacto</h4>
                         <ul className="space-y-2 text-sm">
                             <li>Temuco, Chile</li>
-                            <li>contacto@obergfotos.cl</li>
+                            <li>mt.mototrack@gmail.com</li>
                         </ul>
                     </div>
                     <div>
