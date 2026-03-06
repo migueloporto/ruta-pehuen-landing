@@ -6,13 +6,13 @@ const Hero = () => {
     return (
         <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden">
             {/* Background Image with Overlay */}
-            <div className="absolute inset-0 z-0">
+            <div className="absolute inset-0 z-0 bg-brand-dark flex items-center justify-center">
                 <img
-                    src="/assets/hero.png"
+                    src="/assets/hero_final.jpeg"
                     alt="Moto Trail en Araucanía"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain md:object-cover opacity-80"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-brand-dark"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
             </div>
 
             {/* Content */}
@@ -26,9 +26,9 @@ const Hero = () => {
                         Araucanía Andina - Chile
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-                        La Ruta del <br />
+                        Tour Trail <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                            Pehuén
+                            Temuco-Araucanía
                         </span>
                     </h1>
 

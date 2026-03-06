@@ -17,7 +17,7 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Inicio', href: '#hero' },
         { name: 'El Evento', href: '#info' },
-        { name: 'Programa', href: '#program' },
+        { name: 'Programa (Próximamente)', href: '#program' },
         { name: 'Galería', href: '#gallery' },
         { name: 'Inscripción', href: '#registration' },
     ];
@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <a href="#" className="text-2xl font-bold flex items-center gap-2 text-white">
                     <MapPin className="text-brand-orange" />
-                    <span className="tracking-tighter">Ruta del Pehuén</span>
+                    <span className="tracking-tighter">Tour Trail Temuco-Araucanía</span>
                 </a>
 
                 {/* Desktop Menu */}

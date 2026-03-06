@@ -9,10 +9,10 @@ const Footer = () => {
                 <div className="grid md:grid-cols-3 gap-8 mb-12">
                     <div>
                         <h3 className="text-white font-bold text-xl mb-4 flex items-center gap-2">
-                            <MapPin className="text-brand-orange" /> Ruta del Pehuén
+                            <MapPin className="text-brand-orange" /> Tour Trail Temuco-Araucanía
                         </h3>
                         <p className="text-sm leading-relaxed">
-                            Una experiencia única de moto trail en el corazón de la Araucanía Andina.
+                            Evento de navegación con roadbook digital en la Araucanía.
                         </p>
                     </div>
                     <div>
@@ -32,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="text-center pt-8 border-t border-white/5 text-sm">
-                    <p>© 2026 Ruta del Pehuén. Todos los derechos reservados.</p>
+                    <p>© 2026 Tour Trail Temuco-Araucanía. Todos los derechos reservados.</p>
                 </div>
             </div>
         </footer>

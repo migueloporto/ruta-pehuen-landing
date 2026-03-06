@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CreditCard } from 'lucide-react';
+import { CreditCard, AlertCircle } from 'lucide-react';
 
 const Registration = () => {
-    const paymentLink = "https://www.mercadopago.cl/payment-link/v1/redirect?link-id=569199fb-7320-41d1-9aab-2c8d5d63ce04&source=link";
+    const paymentLink = "https://mpago.la/1JLgmZM";
 
     return (
         <section id="registration" className="py-20 relative overflow-hidden bg-brand-dark">
@@ -34,8 +34,22 @@ const Registration = () => {
                         <h3 className="text-3xl font-bold mb-4">Pago de Inscripción</h3>
                         <p className="text-gray-400 mb-8 max-w-lg mx-auto leading-relaxed">
                             Haz clic en el botón a continuación para ir a la pasarela de pago segura de MercadoPago.
-                            Aceptamos tarjetas de crédito, débito y prepago.
                         </p>
+
+                        <div className="text-left bg-black/30 p-6 rounded-xl border border-white/10 mb-8">
+                            <h4 className="text-brand-orange font-bold mb-4 flex items-center gap-2">
+                                <AlertCircle size={20} /> IMPORTANTE
+                            </h4>
+                            <ul className="space-y-3 text-sm text-gray-300 list-disc pl-5">
+                                <li><strong>Categoría Pro:</strong> Al inscribirte, declaras haber participado en: Taller Avanzado de roadbook (Moto Track), Tour Trail Temuco 2025 o 2 fechas de Trail Trophy.</li>
+                                <li>Se requiere puntualidad estricta el día del evento.</li>
+                                <li>Documentación completa y al día (moto y piloto).</li>
+                                <li>La moto debe estar en óptimas condiciones mecánicas.</li>
+                                <li>Salud compatible con conducción off-road.</li>
+                                <li>Conducción prudente y responsable de acuerdo a la ley.</li>
+                                <li>Liberación de responsabilidad a la organización en caso de accidentes.</li>
+                            </ul>
+                        </div>
 
                         <div className="flex flex-col items-center gap-4">
                             <motion.a
