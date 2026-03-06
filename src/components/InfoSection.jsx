@@ -20,8 +20,8 @@ const InfoSection = () => {
                             Navegación <span className="text-brand-orange">Digital</span>
                         </h2>
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                            El Tour Trail Temuco-Araucanía es un evento de navegación que utiliza un roadbook digital.
-                            Para esto, los pilotos descargan una App de Android en su dispositivo móvil con acceso a red de datos.
+                            El <span className="text-white font-bold">Tour Trail Temuco 2026</span> es un evento de navegación que utiliza un roadbook digital.
+                            Con el apoyo del <span className="text-brand-orange font-bold">@deportemunicipaltemuco</span>, nos daremos cita nuevamente en el principal centro deportivo de la Araucanía.
                         </p>
                         <p className="text-gray-300 text-lg leading-relaxed mb-6">
                             Se trata de un recorrido por caminos vehiculares consolidados donde la experiencia de navegación es lo primordial.

@@ -26,20 +26,18 @@ const Hero = () => {
                         Araucanía Andina - Chile
                     </span>
                     <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-                        Tour Trail <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">
-                            Temuco-Araucanía
-                        </span>
+                        TOUR TRAIL <br />
+                        <span className="text-brand-orange">TEMUCO 2026</span>
                     </h1>
 
                     <div className="flex flex-col md:flex-row justify-center items-center gap-6 mb-12 text-lg">
                         <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
                             <Calendar className="text-brand-orange" size={20} />
-                            <span>7 y 8 de Febrero, 2026</span>
+                            <span>01 y 02 de Mayo, 2026</span>
                         </div>
                         <div className="flex items-center gap-2 bg-white/10 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
                             <MapPin className="text-brand-orange" size={20} />
-                            <span>Geoparque Kutralkura</span>
+                            <span>Temuco, Araucanía</span>
                         </div>
                     </div>
 

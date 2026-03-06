@@ -33,7 +33,8 @@ const Registration = () => {
 
                         <h3 className="text-3xl font-bold mb-4">Pago de Inscripción</h3>
                         <p className="text-gray-400 mb-8 max-w-lg mx-auto leading-relaxed">
-                            Haz clic en el botón a continuación para ir a la pasarela de pago segura de MercadoPago.
+                            Pronto se abrirán las inscripciones. Si deseas puedes pagar en 2 cuotas.
+                            Consulta como coordinarlo directamente por mensaje a Moto Track.
                         </p>
 
                         <div className="text-left bg-black/30 p-6 rounded-xl border border-white/10 mb-8">
