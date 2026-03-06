@@ -10,9 +10,11 @@ const Hero = () => {
                 <img
                     src="/assets/hero_final.jpeg"
                     alt="Moto Trail en Araucanía"
-                    className="w-full h-full object-contain md:object-cover opacity-80"
+                    className="w-full h-full object-contain md:object-cover opacity-60"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent"></div>
+                {/* Multi-layer overlay for maximum readability */}
+                <div className="absolute inset-0 bg-black/40"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/20 to-brand-dark/40"></div>
             </div>
 
             {/* Content */}
@@ -25,7 +27,7 @@ const Hero = () => {
                     <span className="uppercase tracking-[0.2em] text-sm md:text-base text-brand-orange font-bold mb-4 block">
                         Araucanía Andina - Chile
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
+                    <h1 className="text-5xl md:text-7xl font-extrabold mb-6 leading-tight drop-shadow-2xl">
                         TOUR TRAIL <br />
                         <span className="text-brand-orange">TEMUCO 2026</span>
                     </h1>
