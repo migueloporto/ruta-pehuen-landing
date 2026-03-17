@@ -13,9 +13,31 @@ const Registration = () => {
             <div className="container mx-auto px-6 relative z-10">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4">Inscripción y <span className="text-brand-orange">Reserva</span></h2>
-                    <p className="text-gray-300 max-w-2xl mx-auto">
-                        Asegura tu cupo en esta aventura realizando tu pago de forma segura.
+                    <p className="text-gray-300 max-w-2xl mx-auto mb-10">
+                        Asegura tu cupo en esta aventura realizando tu registro y pago de forma segura.
                     </p>
+
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        className="bg-brand-orange/10 border border-brand-orange/30 rounded-2xl p-6 md:p-8 max-w-3xl mx-auto backdrop-blur-sm"
+                    >
+                        <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
+                            ¡REGÍSTRATE E INSCRÍBETE!
+                        </h3>
+                        <p className="text-gray-300 mb-6">
+                            Completa tu registro oficial para el evento en la plataforma de Roadbook Rally.
+                        </p>
+                        <a
+                            href="https://roadbookrally.com/event/23LE6/tour-trail-temuco-2026/information"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block bg-brand-orange hover:bg-orange-600 text-white font-bold py-3 md:py-4 px-8 md:px-12 rounded-full shadow-lg shadow-orange-500/20 transition-all text-lg"
+                        >
+                            Ir al formulario de inscripción
+                        </a>
+                    </motion.div>
                 </div>
 
                 <div className="max-w-2xl mx-auto">
